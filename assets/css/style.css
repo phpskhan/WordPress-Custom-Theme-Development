@@ -1,0 +1,13 @@
+/*
+Theme Name: KSabih Custom WP 1
+Description: This is Custom WordPress Theme developed for Learning Management System
+Author: Khurram Sabih
+Author URI: https://ksabih.com
+Version: 1.0
+Text Domain: ksabih_cwp1
+ */
+
+body {
+	width: 50%;
+	background: #333333;
+}
