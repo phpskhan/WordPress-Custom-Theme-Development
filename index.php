@@ -15,22 +15,20 @@ get_template_part('template-parts/slider');
 ?>
 
 	<section class="txt-area">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="aligncenter"><h1 class="aligncenter">Our Courses</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus.</div>
-				
-			</div>
-		</div>
-	</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="aligncenter"><h1 class="aligncenter">Our Courses</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus.</div>
+                </div>
+            </div>
+        </div>
 	</section>
 	
 	
 	<section id="content">
-	
-	
-	<div class="container">
-		<div class="row">
+
+        <div class="container">
+            <div class="row">
                 <div class="features">
                     <div class="col-md-4 col-sm-6 wow fadeInUp animated" data-wow-duration="300ms" data-wow-delay="0ms" style="visibility: visible; -webkit-animation-duration: 300ms; -webkit-animation-delay: 0ms;">
                         <div class="media service-box">
@@ -104,49 +102,52 @@ get_template_part('template-parts/slider');
                         </div>
                     </div><!--/.col-md-4-->
                 </div>
-            </div>	 
-	 
+            </div>
+        </div>
+	</section>
 
-	</div>
+    <section class="aboutUs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aligncenter"><h2 class="aligncenter">Our Students</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus..</div><br/>
+                </div>
+            </div> 
+    		<div class="row">
+                <div class="col-md-6">
+                    <img src="<?php echo get_template_directory_uri()?>/img/img1.png" alt="">
+                    <div class="space"></div>
+                </div>
+
+                <div class="col-md-6">
+                    <p>Lorem ipsum dolor sit amet, cadipisicing  sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde fuga error commodi architecto, oribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus, vero mollitia velit ad consectetur. Alias, laborum excepturi nihil autem nemo numquam, ipsa architecto non, magni consequuntlaudantium culpa tenetur at id, beatae pet.</p>
+
+    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. adipisicing  sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium,m deserunt.</p>
+
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Lorem ipsum enimdolor sit amet</li>
+                        <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Explicabo deleniti neque aliquid</li>
+                        <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Consectetur adipisicing elit</li>
+                        <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Lorem ipsum dolor sit amet</li>
+                        <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Quo issimos molest quibusdam temporibus</li>
+                    </ul>
+                </div>
+            </div>
+    	</div>
+
+
 	</section>
-	
-		<section class="aboutUs">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="aligncenter"><h2 class="aligncenter">Our Students</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus..</div>
-				<br/>
-			</div>
-		</div> 
-		<div class="row">
-							<div class="col-md-6">
-								<img src="<?php echo  get_template_directory_uri()?>/img/img1.png" alt="">
-								<div class="space"></div>
-							</div>
-							<div class="col-md-6">
-								<p>Lorem ipsum dolor sit amet, cadipisicing  sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde fuga error commodi architecto, oribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus, vero mollitia velit ad consectetur. Alias, laborum excepturi nihil autem nemo numquam, ipsa architecto non, magni consequuntlaudantium culpa tenetur at id, beatae pet.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. adipisicing  sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium,m deserunt.</p>
-								<ul class="list-unstyled">
-									<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Lorem ipsum enimdolor sit amet</li>
-									<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Explicabo deleniti neque aliquid</li>
-									<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Consectetur adipisicing elit</li>
-									<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Lorem ipsum dolor sit amet</li>
-									<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Quo issimos molest quibusdam temporibus</li>
-								</ul>
-							</div>
-						</div>
-	
-	</div>
-	</section>
-	<section id='events'>
-	<div class="container">
-	<div class="row">
-			<div class="col-md-12">
-				<div class="aligncenter"><h2 class="aligncenter">Our Events</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus.</div>
-				<br>
-			</div>
-		</div>
-	<div class="row">
+
+
+    <section id='events'>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aligncenter"><h2 class="aligncenter">Our Events</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus.</div><br>
+                </div>
+            </div>
+
+            <div class="row">
                 <div class="col-md-4">
                     <div class="post3">
                         <img src="<?php echo  get_template_directory_uri()?>/img/e1.png" alt="">
@@ -184,9 +185,8 @@ get_template_part('template-parts/slider');
                     </div>
                 </div>
             </div>
-	</div>
+	    </div>
 	</section>
-
 
 
 <!-- <img src="<?php echo get_template_directory_uri();
