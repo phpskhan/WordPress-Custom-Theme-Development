@@ -11,53 +11,22 @@
 		<div class="row">
 			<div class="col-lg-3">
 				<div class="widget" style="text-decoration: none;">
-					<?php dynamic_sidebar('footer-1');?>
-					<br><br>
-					<h5 class="widgetheading">Our Contact</h5>
-					<address>
-					<strong>Your School Name</strong><br>
-					JC Main Road, Near Silnile tower<br>
-					 Pin-21542 NewYork US.</address>
-					<p>
-						<i class="icon-phone"></i> (123) 456-789 - 1255-12584 <br>
-						<i class="icon-envelope-alt"></i> email@domainname.com
-					</p>
+					<h5 class="widgetheading"><?php dynamic_sidebar('footer-1');?></h5>	
 				</div>
 			</div>
 			<div class="col-lg-3">
 				<div class="widget">
-					<?php dynamic_sidebar('footer-2');?>
-					<br><br>
-					<h5 class="widgetheading">Quick Links</h5>
-					<ul class="link-list">
-						<li><a href="#">Latest Events</a></li>
-						<li><a href="#">Terms and conditions</a></li>
-						<li><a href="#">Privacy policy</a></li>
-						<li><a href="#">Career</a></li>
-						<li><a href="#">Contact us</a></li>
-					</ul>
+					<h5 class="widgetheading"><?php dynamic_sidebar('footer-2');?></h5>
 				</div>
 			</div>
 			<div class="col-lg-3">
 				<div class="widget">
-					<?php dynamic_sidebar('footer-3');?>
-					<br><br>
-					<h5 class="widgetheading">Latest posts</h5>
-					<ul class="link-list">
-						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-						<li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-						<li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-					</ul>
+					<h5 class="widgetheading"><?php dynamic_sidebar('footer-3');?></h5>
 				</div>
 			</div>
 			<div class="col-lg-3">
 				<div class="widget">
-					<h5 class="widgetheading">Recent News</h5>
-					<ul class="link-list">
-						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-						<li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-						<li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-					</ul>
+					<h5 class="widgetheading"><?php dynamic_sidebar('footer-4');?></h5>
 				</div>
 			</div>
 		</div>

@@ -9,12 +9,13 @@ add_theme_support( 'custom-logo' );
 
 add_theme_support( 'title-tag' );
 
-add_theme_support( 'post-thumbnail' );
+add_theme_support( 'post-thumbnails' );
 
 add_theme_support( 'automatic-feed-links' );
 
-add_theme_support( 'wid' );
+add_theme_support( 'widget-customizer' );
 
+add_image_size( 'home-featured', 640, 400, array('center', 'center') );
 
 
 register_nav_menus( array(
@@ -30,39 +31,52 @@ function ksabih_cwp1_widgets_init() {
 		'name'          => __( 'Primary Sidebar', 'ksabih_cwp1' ),
 		'id'            => 'main-sidebar',
 		'description'	=> 'Main Sidebar',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h3 class="Sidebar-1">',
+		'before_widget' => '<h3 id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</h3>',
+		'before_title'  => '<h3 class="Footer-Sidebar-3">',
 		'after_title'   => '</h3>',
+
 	) );
 
 	register_sidebar( array(
 		'name'          => __( 'Footer Widget 1', 'ksabih_cwp1' ),
 		'id'            => 'footer-1',
 		'description'	=> 'Footer Sidebar 1',
-		'before_widget' => '<ul><li id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</li></ul>',
-		'before_title'  => '<h3 class="Footer-Sidebar-1">',
+		'before_widget' => '<p id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</p>',
+		'before_title'  => '<h3 class="Footer-Sidebar-3">',
 		'after_title'   => '</h3>',
+
 	) );
 
 	register_sidebar( array(
 		'name'          => __( 'Footer Widget 2', 'ksabih_cwp1' ),
 		'id'            => 'footer-2',
 		'description'	=> 'Footer Sidebar 2',
-		'before_widget' => '<ul><li id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</li></ul>',
-		'before_title'  => '<h3 class="Footer-Sidebar-2">',
+		'before_widget' => '<p id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</p>',
+		'before_title'  => '<h3 class="Footer-Sidebar-3">',
 		'after_title'   => '</h3>',
+
 	) );
 
 	register_sidebar( array(
 		'name'          => __( 'Footer Widget 3', 'ksabih_cwp1' ),
 		'id'            => 'footer-3',
 		'description'	=> 'Footer Sidebar 3',
-		'before_widget' => '<ul><li id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</li></ul>',
+		'before_widget' => '<p id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</p>',
 		'before_title'  => '<h3 class="Footer-Sidebar-3">',
+		'after_title'   => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Footer Widget 4', 'ksabih_cwp1' ),
+		'id'            => 'footer-4',
+		'description'	=> 'Footer Sidebar 4',
+		'before_widget' => '<p id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</p>',
+		'before_title'  => '<h3 class="Footer-Sidebar-4">',
 		'after_title'   => '</h3>',
 	) );
 }
@@ -73,7 +87,10 @@ add_action( 'widgets_init', 'ksabih_cwp1_widgets_init' );
 
 
 function ksabih_cwp1_addcss() {
-	// wp_enqueue_style('bootstrap-4.6.2-dist', get_template_directory_uri() .'/assets/bootstrap-4.6.2-dist/css/bootstrap.min.css');
+
+    // wp_enqueue_style('style', get_stylesheet_uri());
+
+
 	wp_enqueue_style('bootstrap', get_template_directory_uri() .'/css/bootstrap.min.css');
 	wp_enqueue_style('fancybox', get_template_directory_uri() .'/css/fancybox/jquery.fancybox.css');
 	wp_enqueue_style('jcarousel', get_template_directory_uri() .'/css/jcarousel.css');

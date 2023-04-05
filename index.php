@@ -147,46 +147,35 @@ get_template_part('template-parts/slider');
                 </div>
             </div>
 
+
             <div class="row">
+<?php
+if ( have_posts() ) :
+    while ( have_posts() ) : the_post();
+?>
+
                 <div class="col-md-4">
                     <div class="post3">
-                        <img src="<?php echo  get_template_directory_uri()?>/img/e1.png" alt="">
-                        <a href="#">
+                        <?php the_post_thumbnail('home-featured');?>
                             <time datetime="2019-03-01">
-                                <span class="year">2019</span>
-                                <span class="month">Feb</span>
+                                <h4 class="year"><?php the_title();?></h4>
+                                <h5 class="month"><?php the_author();?> 
+                                <span class="month"> <?php the_time();?></span></h5>
                             </time>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipis.</p>
-                        </a>
+                        <!-- <a href="#"> -->
+                            <p><?php the_excerpt();?></p>
+                        <!-- </a> -->
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="post3">
-                        <img src="<?php echo  get_template_directory_uri()?>/img/e2.png" alt="">
-                        <a href="#">
-                            <time datetime="2019-03-01">
-                                <span class="year">2019</span>
-                                <span class="month">March</span>
-                            </time>
-                            <p>Apsum dolor sit amet, consectetur adipisdslif.</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="post3">
-                        <img src="<?php echo  get_template_directory_uri()?>/img/e3.png" alt="">
-                        <a href="#">
-                            <time datetime="2019-03-01">
-                                <span class="year">2019</span>
-                                <span class="month">April</span>
-                            </time>
-                            <p>Dolor sit amet, consectetur adipisic indfeft</p>
-                        </a>
-                    </div>
-                </div>
+<?php
+    endwhile;
+else :
+    _e( 'Sorry, no posts matched your criteria.', 'textdomain' );
+endif;
+?>
             </div>
-	    </div>
-	</section>
+        </div>
+    </section>
 
 
 <!-- <img src="<?php echo get_template_directory_uri();
@@ -195,29 +184,8 @@ get_template_part('template-parts/slider');
 <img src="<?php echo get_parent_theme_file_uri();
 ?>/assets/img/banner.png">
  -->
+
 <?php
-
-if ( have_posts() ) :
-    while ( have_posts() ) : the_post();
-
-        echo "<h1>";
-        the_title();
-        echo "</h1>";
-
-        the_content();
-
-        the_author();
-        echo "<br>";
-
-        the_time();
-        echo "<br>";
-        echo "<br>";
-
-    endwhile;
-else :
-    _e( 'Sorry, no posts matched your criteria.', 'textdomain' );
-endif;
-
 get_sidebar();
 get_footer();
 ?>

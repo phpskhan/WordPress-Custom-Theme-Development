@@ -6,6 +6,42 @@ Author URI: https://ksabih.com
 Version: 1.0
 */
 
-body {
-	background: #333333;
+
+/******************
+02: Main Menu
+******************/
+.sites-navigation {
+    width: 100%;
+    display: block;
+    clear: both;
+    background: #2ca358;
+    height: 60px;
+}
+.sites-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    clear: both;
+    text-align: center
+}
+.sites-navigation ul li {
+    display: inline-block;
+    height: 60px;
+    margin-left: -4px;
+}
+.sites-navigation ul li a {
+    display: inline-block;
+    height: 100%;
+    padding: 0 40px;
+    line-height: 60px;
+    color: #f0f0f0;
+    border-right: 1px solid #6b53b7;
+}
+.sites-navigation ul li a:hover {
+    text-decoration: none;
+    background: #6b53b7;
+}
+.sites-navigation ul li:first-child a {
+    border-left: 1px solid #6b53b7;
 }
