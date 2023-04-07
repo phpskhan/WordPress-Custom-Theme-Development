@@ -1,7 +1,7 @@
 <?php
 
 /*
-* This is main file
+* Template Name: Home Template
 */
 
 get_header();
@@ -14,6 +14,8 @@ get_template_part('template-parts/slider');
 
 ?>
 
+
+
 	<section class="txt-area">
         <div class="container">
             <img class="img-fluid" src="<?php header_image();?>
@@ -21,9 +23,16 @@ get_template_part('template-parts/slider');
 
 <!--             <img class="img-fluid" src="<?php echo get_custom_header()->url;?>
             "> -->
+
+
+    <?php if (have_posts() ) :?>
+        <?php while ( have_posts() ) : the_post(); ?>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="aligncenter"><h1 class="aligncenter">Our Courses</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus.</div>
+                    <div class="aligncenter"><?php the_content(); ?>
+                    </div>
+        <?php endwhile; ?>
+    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -169,7 +178,7 @@ if ( $my_posts->have_posts() ) :
                 <div class="col-md-4">
                     <div class="post3">
                         <div class="post-thumbnail row ml-0 mr-0">
-                            <a href="<?php the_permalink() ?>">
+                            <a href="<?php echo get_the_permalink(get_the_ID() ) ?>">
                                 <?php the_post_thumbnail('home-featured') ?>
                             </a>
                         </div>
@@ -195,6 +204,7 @@ else :
 endif;
 
 wp_reset_postdata();
+
 ?>
             </div>
         </div>

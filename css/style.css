@@ -8,6 +8,23 @@ Licence under Creative Commons Attribution 3.0
 @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');   
 @import url('animate.css');
 
+.pagination {
+    padding: 10px;
+    text-align: center;
+}
+.pagination a, .page-numbers.current {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: #333333;
+    margin: 0 5px;
+}
+.page-numbers.current {
+    background: #fff;
+}
+
 body {
 	font-family:'Open Sans', Arial, sans-serif;
 	font-size:14px;

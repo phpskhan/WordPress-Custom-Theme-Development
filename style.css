@@ -45,3 +45,20 @@ Version: 1.0
 .sites-navigation ul li:first-child a {
     border-left: 1px solid #6b53b7;
 }
+
+.pagination {
+    padding: 10px;
+    text-align: center;
+}
+.pagination a, .page-numbers.current {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: #333333;
+    margin: 0 5px;
+}
+.page-numbers.current {
+    background: #fff;
+}

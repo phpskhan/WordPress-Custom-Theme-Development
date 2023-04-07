@@ -15,6 +15,18 @@ add_theme_support( 'automatic-feed-links' );
 
 add_theme_support( 'widget-customizer' );
 
+$args = array (
+	'default-image' => get_template_directory_uri().'/assets/img/lms_banner.png',
+	'default-text-color' => '000',
+	'width' => 1920,
+	'height' => 400,
+	'flex-width' => true,
+	'flex-height' => true,
+
+);
+
+add_theme_support( 'custom-header', $args );
+
 add_image_size( 'home-featured', 640, 400, array('center', 'center') );
 
 
@@ -83,13 +95,17 @@ function ksabih_cwp1_widgets_init() {
 
 add_action( 'widgets_init', 'ksabih_cwp1_widgets_init' );
 
-
-
+function wpdocs_custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
 function ksabih_cwp1_addcss() {
 
     // wp_enqueue_style('style', get_stylesheet_uri());
 
+
+	// wp_enqueue_style('style', get_template_directory_uri() .'/css/style.css');
 
 	wp_enqueue_style('bootstrap', get_template_directory_uri() .'/css/bootstrap.min.css');
 	wp_enqueue_style('fancybox', get_template_directory_uri() .'/css/fancybox/jquery.fancybox.css');
@@ -114,3 +130,8 @@ function ksabih_cwp1_addcss() {
 
 }
 add_action('wp_enqueue_scripts', 'ksabih_cwp1_addcss');
+
+function themeslug_customize_register( $wp_customize ) {
+  // Do stuff with $wp_customize, the WP_Customize_Manager object.
+}
+add_action( 'customize_register', 'themeslug_customize_register' );
