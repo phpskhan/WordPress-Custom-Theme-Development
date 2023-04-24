@@ -1,31 +1,32 @@
 <?php
-
 /*
-* This template is used to display single page
+* This template is used display single pages
 */
 
 get_header();
 
-if ( have_posts() ) :
-    while ( have_posts() ) : the_post();
+wp_head();
 
-        echo "<h1>";
-        the_title();
-        echo "</h1>";
+get_template_part('template-parts/navBar');
 
-        the_content();
+get_template_part('template-parts/slider');
 
-        the_author();
-        echo "<br>";
+?>
+        <div class="page-custom-header">
+            <?php $img_url = get_the_post_thumbnail_url(get_the_ID(), 'post-thumbnail') ?>
+            <img src="<?php echo $img_url ?>" alt="<?php echo get_the_title() ?>" class="img-fluid">
+        </div>
+        <div class="flex-row ml-0 mr-0 mt-3">
+            <?php if ( have_posts() ) : ?>
+                <?php while ( have_posts() ) : the_post(); ?>
+                    <h1><?php the_title() ?></h1>
+                    <p><?php the_content(); ?></p>
+                <?php endwhile; ?>
+            <?php endif; ?>
+        </div>
+        
 
-        the_time();
-        echo "<br>";
-
-    endwhile;
-else :
-    _e( 'Sorry, no posts matched your criteria.', 'textdomain' );
-endif;
-
-get_sidebar();
+<?php 
 get_footer();
 ?>
+

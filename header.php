@@ -1,16 +1,8 @@
-<?php
-
-/*
-* This template is used to display header template part
-*/
-?>
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes();?>>
 <head>
-<meta charset="utf-8">
-<title><?php bloginfo('name');?> | <?php echo get_the_title();?></title>
- 
+	<meta charset="<?php bloginfo('charset');?>">
+	<title><?php bloginfo('title');?> | <?php echo get_the_title();?></title>
+	<?php wp_head();?>
 </head>
-
+<body>

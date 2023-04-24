@@ -53,23 +53,22 @@
 </style>
 
 
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" style="pading-left: 50px;" href="<?php bloginfo('url');?>"><?php the_custom_logo();?>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <a class="navbar-brand" style="pading-left: 50px;" href="<?php bloginfo('url');?>"><?php the_custom_logo();?>
-        </a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-        <nav class="site-navigation">
-            <?php wp_nav_menu( array(
-                'theme_location' => 'primary'
-                ) ); 
-            ?>
-        </nav>
-  </div>
-</nav>
+            <nav class="site-navigation">
+                <?php wp_nav_menu( array(
+                    'theme_location' => 'primary'
+                    ) ); 
+                ?>
+            </nav>
+      </div>
+    </nav>
 
 
 <div id="wrapper" class="home-page">

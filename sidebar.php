@@ -1,7 +1,6 @@
-<?php
 
-/*
-* This template is used to display sidebar template part
-*/
-
-	dynamic_sidebar('main-sidebar');
+	<aside>
+		<div>
+			<?php dynamic_sidebar('main-sidebar');?>
+		</div>
+	</aside>
